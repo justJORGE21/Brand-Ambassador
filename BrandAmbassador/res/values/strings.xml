@@ -10,6 +10,16 @@
     <string name="selectedDate"></string>
     <string name="addEvent">Add Event</string>
     <string name="title_activity_add_event">Add Event</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="Addbutton">+</string>
+    <string name="title_activity_display_event">Add Event</string>
+    <string name="hello_world">This is the page where you add an event!</string>
+	<string name="Title">Title</string>
+	<string name="title_message">Tap to enter title</string>
+	<string name="Location">Location</string>
+	<string name="location_message">Tap to enter the location</string>
+	<string name="From">From</string>
+	<string name="To">To</string>
+	<string name="pay_rate">Pay Rate</string>
+	<string name="payrate_message">Tap to enter the pay rate</string>
 
 </resources>

@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,11 +6,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AddEventActivity" >
-
+    tools:context=".DisplayEventActivity" >
+	<LinearLayout >
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/Title" />
+    	<EditText android:id="@+id/edit_message"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:hint="@string/title_message" />
+   </LinearLayout>
+   <LinearLayout >
+   		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/Location" />
+    	<EditText android:id="@+id/location_message"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:hint="@string/location_message" />
+   </LinearLayout>
+   
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/From" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/To" />
+    <LinearLayout >
+   		 <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_rate" />
+    
+    <EditText 
+        android:id="@+id/payrate_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/payrate_message" />
+    </LinearLayout>
+ 
 
-</RelativeLayout>
+</TableLayout>
