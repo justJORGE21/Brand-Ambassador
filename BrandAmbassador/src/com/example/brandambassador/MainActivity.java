@@ -52,5 +52,11 @@ public class MainActivity extends Activity {
 		intent.putExtra(SELECTED_DATE, date);
 		startActivity (intent);
 	}
+	
+	public void openDocs(View view) {
+		Intent intent = new Intent(this, DisplayDocumentsActivity.class);
+		startActivity(intent);
+		
+	}
 
 }

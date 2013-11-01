@@ -29,6 +29,14 @@
             android:name="com.example.brandambassador.AddEventActivity"
             android:label="@string/title_activity_add_event" >
         </activity>
+        <activity
+            android:name="com.example.brandambassador.DisplayDocumentsActivity"
+            android:label="@string/title_activity_display_documents"
+            android:parentActivityName="com.example.brandambassador.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.brandambassador.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -71,6 +71,7 @@
         android:layout_alignBaseline="@+id/financeButton"
         android:layout_alignBottom="@+id/financeButton"
         android:layout_alignLeft="@+id/addEventButton"
-        android:text="@string/documents_button" />
+        android:text="@string/documents_button" 
+        android:onClick="openDocs"/>
 
 </RelativeLayout>
