@@ -24,20 +24,25 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
+        public static final int Pro_Client_message=0x7f08000f;
+        public static final int action_settings=0x7f080014;
         public static final int addEventButton=0x7f080005;
         public static final int button1=0x7f080002;
         public static final int button2=0x7f080001;
         public static final int button3=0x7f080000;
         public static final int calendarButton=0x7f080004;
+        public static final int contacts_message=0x7f080012;
         public static final int dateEditText=0x7f08000e;
         public static final int documentButton=0x7f080009;
         public static final int edit_message=0x7f08000a;
         public static final int financeButton=0x7f080007;
+        public static final int hiring_company_message=0x7f080010;
         public static final int location_message=0x7f08000b;
         public static final int myCalendar=0x7f080003;
+        public static final int note_message=0x7f080013;
         public static final int payrate_message=0x7f08000c;
         public static final int reportButton=0x7f080008;
+        public static final int role_message=0x7f080011;
         public static final int selectedDate=0x7f080006;
         public static final int textView1=0x7f08000d;
     }
@@ -53,29 +58,44 @@ public final class R {
     }
     public static final class string {
         public static final int Addbutton=0x7f05000a;
-        public static final int From=0x7f050011;
-        public static final int Location=0x7f05000f;
-        public static final int Title=0x7f05000d;
-        public static final int To=0x7f050012;
+        public static final int From=0x7f050010;
+        public static final int Location=0x7f05000e;
+        public static final int Title=0x7f05000c;
+        public static final int To=0x7f050011;
         public static final int action_settings=0x7f050001;
         public static final int addEvent=0x7f050007;
+        public static final int alert=0x7f050021;
         public static final int app_name=0x7f050000;
         public static final int calendar_button=0x7f050002;
+        public static final int contacts=0x7f05001f;
+        public static final int contacts_message=0x7f050020;
         public static final int date=0x7f050008;
         public static final int documents_button=0x7f050003;
-        public static final int files_button=0x7f050016;
-        public static final int hello_world=0x7f05000c;
-        public static final int images_button=0x7f050017;
-        public static final int location_message=0x7f050010;
+        public static final int expected_payDate=0x7f050018;
+        public static final int files_button=0x7f050013;
+        public static final int hello_world=0x7f050026;
+        public static final int hiring_company=0x7f05001b;
+        public static final int hiring_company_message=0x7f05001c;
+        public static final int images_button=0x7f050014;
+        public static final int location_message=0x7f05000f;
         public static final int money_button=0x7f050004;
-        public static final int pay_rate=0x7f050013;
-        public static final int payrate_message=0x7f050014;
+        public static final int notes=0x7f050023;
+        public static final int notes_message=0x7f050024;
+        public static final int pay_rate=0x7f050016;
+        public static final int payrate_message=0x7f050017;
+        public static final int pro_client_message=0x7f05001a;
+        public static final int product_client=0x7f050019;
+        public static final int repeat=0x7f050022;
         public static final int reports_button=0x7f050005;
+        public static final int role=0x7f05001d;
+        public static final int role_message=0x7f05001e;
         public static final int selectedDate=0x7f050006;
+        public static final int timeZone=0x7f050015;
         public static final int title_activity_add_event=0x7f050009;
-        public static final int title_activity_display_documents=0x7f050015;
+        public static final int title_activity_display_documents=0x7f050012;
         public static final int title_activity_display_event=0x7f05000b;
-        public static final int title_message=0x7f05000e;
+        public static final int title_activity_do_report=0x7f050025;
+        public static final int title_message=0x7f05000d;
     }
     public static final class style {
         /** 

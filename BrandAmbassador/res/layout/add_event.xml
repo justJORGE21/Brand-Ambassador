@@ -68,6 +68,79 @@
         android:hint="@string/date" />
     
 	</LinearLayout>	
+	 <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_client" />
+    
+    	<EditText 
+        android:id="@+id/Pro_Client_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pro_client_message" />
+    </LinearLayout>
+    <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hiring_company" />
+    
+    	<EditText 
+        android:id="@+id/hiring_company_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hiring_company_message" />
+    </LinearLayout>
+        <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/role" />
+    
+    	<EditText 
+        android:id="@+id/role_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/role_message" />
+    </LinearLayout>
+    <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts" />
+    
+    	<EditText 
+        android:id="@+id/contacts_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contacts_message" />
+    </LinearLayout>
+     <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert" />
+    </LinearLayout>
+    <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repeat" />
+    </LinearLayout>
+    <LinearLayout >
+   		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notes" />
+    
+    	<EditText 
+        android:id="@+id/note_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/notes_message" />
+    </LinearLayout>
+    
     
 
 </TableLayout>
