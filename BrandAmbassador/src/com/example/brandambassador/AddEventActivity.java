@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class AddEventActivity extends Activity {
 	EditText Title, Location, eventDate, Time_from, Time_to, PayRate, PayDay, Prod_Client, HiringComp, Role, Contacts, Notes;
 
-	@SuppressLint ("NewApi")
+	@SuppressLint ("NewApi") 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

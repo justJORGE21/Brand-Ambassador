@@ -26,6 +26,6 @@ public class ReportActivity extends Activity {
 		String Role = intent.getStringExtra("ROLE");
 		String Contacts = intent.getStringExtra("CONTACTS");
 		String Notes = intent.getStringExtra("NOTES");
-	}
+	} 
 }
 

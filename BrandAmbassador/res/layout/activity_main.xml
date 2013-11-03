@@ -25,7 +25,7 @@
         android:layout_alignBottom="@+id/reportButton"
         android:layout_toRightOf="@+id/reportButton"
         android:text="@string/money_button" />
-
+ 
     <Button
         android:id="@+id/calendarButton"
         style="?android:attr/buttonStyleSmall"

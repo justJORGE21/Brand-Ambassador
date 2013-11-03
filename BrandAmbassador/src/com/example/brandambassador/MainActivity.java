@@ -52,7 +52,6 @@ public class MainActivity extends Activity {
 	public void openDocs(View view) {
 		Intent intent = new Intent(this, DisplayDocumentsActivity.class);
 		startActivity(intent);
-		
 	}
 
 }

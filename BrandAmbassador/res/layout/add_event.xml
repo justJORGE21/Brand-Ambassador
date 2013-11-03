@@ -24,7 +24,7 @@
         android:ems="10"
         android:hint="@string/location_message" >
 
-    </EditText>
+    </EditText> 
 
     <TextView
         android:id="@+id/displayDate"
