@@ -52,7 +52,8 @@
         android:layout_alignBaseline="@+id/calendarButton"
         android:layout_alignBottom="@+id/calendarButton"
         android:layout_toRightOf="@+id/calendarButton"
-        android:text="@string/reports_button" />
+        android:text="@string/reports_button"
+        android:onClick="doReports" />
 
     <Button
         android:id="@+id/addEventButton"
