@@ -37,6 +37,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.brandambassador.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.brandambassador.DoReportActivity"
+            android:label="@string/title_activity_do_report" >
+        </activity>
     </application>
 
 </manifest>
