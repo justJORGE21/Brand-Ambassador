@@ -1,53 +1,288 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+    
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="535dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DisplayEventActivity" >
-	<LinearLayout >
-    	<TextView
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/Title" />
-    	<EditText android:id="@+id/edit_message"
-        	android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:hint="@string/title_message" />
-   </LinearLayout>
-   <LinearLayout >
-   		<TextView
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/Location" />
-    	<EditText android:id="@+id/location_message"
-        	android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:hint="@string/location_message" />
-   </LinearLayout>
-   
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/From" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/To" />
-    <LinearLayout >
-   		 <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pay_rate" />
-    
-    <EditText 
-        android:id="@+id/payrate_message"
+
+    <EditText
+        android:id="@+id/enterLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/payrate_message" />
-    </LinearLayout>
- 
+        android:layout_alignBaseline="@+id/location"
+        android:layout_alignBottom="@+id/location"
+        android:layout_toRightOf="@+id/location"
+        android:ems="10"
+        android:hint="@string/location_message" >
 
-</TableLayout>
+    </EditText>
+
+    <TextView
+        android:id="@+id/displayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/selectedDate"
+        android:layout_toRightOf="@+id/location"
+        android:text="@string/display_date" />
+
+    <EditText
+        android:id="@+id/enterPayRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/payRate"
+        android:layout_alignBottom="@+id/payRate"
+        android:layout_alignLeft="@+id/enterPayDay"
+        android:layout_toRightOf="@+id/location"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/enterPayDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/payDay"
+        android:layout_below="@+id/enterPayRate"
+        android:layout_toRightOf="@+id/payRate"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/productClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ProductandClient"
+        android:layout_alignBottom="@+id/ProductandClient"
+        android:layout_alignLeft="@+id/enterHiringCompany"
+        android:layout_toRightOf="@+id/ProductandClient"
+        android:ems="10"
+        android:hint="@string/enterProductClient" />
+
+    <EditText
+        android:id="@+id/enterHiringCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hiringCompany"
+        android:layout_alignBottom="@+id/hiringCompany"
+        android:layout_toRightOf="@+id/hiringCompany"
+        android:ems="10"
+        android:hint="@string/HiringCompany" />
+
+    <EditText
+        android:id="@+id/time_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/from"
+        android:layout_alignBottom="@+id/from"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/from"
+        android:ems="10">
+    </EditText>
+
+    <EditText
+        android:id="@+id/time_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to"
+        android:layout_alignBottom="@+id/to"
+        android:layout_alignLeft="@id/time_from"
+        android:layout_toRightOf="@+id/to"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/enterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignLeft="@id/enterLocation"
+        android:layout_alignParentRight="true"
+        android:ems="2"
+        android:hint="@string/title_message" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/enterRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/role"
+        android:layout_alignBottom="@+id/role"
+        android:layout_alignLeft="@+id/time_to"
+        android:ems="10"
+        android:hint="@string/EnterRole" />
+
+    <EditText
+        android:id="@+id/enterContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contacts"
+        android:layout_alignBottom="@+id/contacts"
+        android:layout_alignLeft="@+id/enterPayDay"
+        android:ems="10"
+        android:hint="@string/hint_contacts" />
+
+    <Button
+        android:id="@+id/calendarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notes"
+        android:layout_below="@+id/enterNotes"
+        android:layout_marginTop="28dp"
+        android:text="@string/calendar_button" />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterRole"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/enterContacts"
+        android:text="@string/contacts" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contacts"
+        android:layout_below="@+id/enterContacts"
+        android:layout_marginTop="15dp"
+        android:text="@string/notes" />
+
+    <EditText
+        android:id="@+id/enterNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/notes"
+        android:layout_alignBottom="@+id/notes"
+        android:layout_alignLeft="@+id/enterContacts"
+        android:ems="10"
+        android:hint="@string/hint_notes" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contacts"
+        android:layout_below="@+id/enterHiringCompany"
+        android:layout_marginTop="15dp"
+        android:text="@string/role" />
+
+    <TextView
+        android:id="@+id/hiringCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/role"
+        android:layout_below="@+id/productClient"
+        android:layout_marginTop="15dp"
+        android:text="@string/hiring_company" />
+
+    <TextView
+        android:id="@+id/ProductandClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hiringCompany"
+        android:layout_below="@+id/enterPayDay"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_client" />
+
+    <TextView
+        android:id="@+id/payDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProductandClient"
+        android:layout_below="@+id/enterPayRate"
+        android:layout_marginTop="15dp"
+        android:text="@string/pay_day" />
+
+    <TextView
+        android:id="@+id/payRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/to"
+        android:layout_below="@+id/time_to"
+        android:layout_marginTop="15dp"
+        android:text="@string/pay_rate" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/from"
+        android:layout_below="@+id/time_from"
+        android:layout_marginTop="15dp"
+        android:text="@string/To" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/selectedDate"
+        android:layout_below="@+id/selectedDate"
+        android:layout_marginTop="15dp"
+        android:text="@string/From" />
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/location"
+        android:layout_below="@+id/enterLocation"
+        android:layout_marginTop="15dp"
+        android:text="@string/selected_date" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/enterTitle"
+        android:layout_marginTop="15dp"
+        android:text="@string/Location" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/Title" />
+
+    <Button
+        android:id="@+id/Documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Reports"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Reports"
+        android:layout_toRightOf="@+id/Reports"
+        android:text="@string/documents_button" />
+
+    <Button
+        android:id="@+id/Reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarbutton"
+        android:layout_alignBottom="@+id/calendarbutton"
+        android:layout_toRightOf="@+id/calendarbutton"
+        android:text="@string/reports_button" />
+
+    <Button
+        android:id="@+id/saveEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/enterTitle"
+        android:onClick="saveEvent"
+        android:text="@string/save_event" />
+
+</RelativeLayout>
+
+</ScrollView>

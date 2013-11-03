@@ -1,27 +1,25 @@
 package com.example.brandambassador;
 
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CalendarView;
-import android.widget.TextView;
 import android.widget.CalendarView.OnDateChangeListener;
 
 public class MainActivity extends Activity {
-	public final static String SELECTED_DATE = "com.example.myfirstapp.DATE";
+	//Initialize Variable
+	String selectedDate;
 	
-	TextView selectedDate;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		CalendarView calendar = (CalendarView) findViewById(R.id.myCalendar);
-		selectedDate = (TextView) findViewById (R.id.selectedDate);
-		
+				
 		calendar.setOnDateChangeListener(new OnDateChangeListener()
 			{
 			@Override
@@ -30,8 +28,7 @@ public class MainActivity extends Activity {
 				int Day = day;
 				int Month = month + 1; //Month starts with 0
 				int Year = year;
-				
-				selectedDate.setText(Month + "/" + Day + "/" + Year);
+				selectedDate = Month + "/" + Day + "/" + Year;
 			}
 		});
 		
@@ -44,12 +41,11 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	//Start addEvent Activity when Add Event Button is clicked
 	public void addEvent (View view)
 	{
 		Intent intent = new Intent (this, AddEventActivity.class);
-		TextView Date = (TextView) findViewById(R.id.selectedDate);
-		String date = Date.getText().toString();
-		intent.putExtra(SELECTED_DATE, date);
+		intent.putExtra("SELECTED_DATE", selectedDate);
 		startActivity (intent);
 	}
 	

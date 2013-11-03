@@ -16,14 +16,6 @@
         android:layout_below="@+id/addEventButton"
         android:showWeekNumber="false" />
 
-    <TextView
-        android:id="@+id/selectedDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/myCalendar"
-        android:layout_alignLeft="@+id/myCalendar"
-        android:text="@string/selectedDate" />
-
     <Button
         android:id="@+id/financeButton"
         style="?android:attr/buttonStyleSmall"
@@ -39,7 +31,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/selectedDate"
+        android:layout_alignLeft="@+id/myCalendar"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:text="@string/calendar_button" />
