@@ -8,39 +8,31 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.EditText;
 
 public class AddEventActivity extends Activity {
-
+	public final static String SELECTED_DATE = "com.example.brandambassador.DATE";		//Extra for passing date from MainActivity to AddEventActivity
+	private String Date;			//String to hold Date
+	private EditText showDate;		//EditText to display Date string
+	
 	@SuppressLint ("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_event);
 		
-		setupActionBar();
-		
 		//Get the message from the intent that was in MainActivity
 		Intent intent = getIntent();
-		String Date = intent.getStringExtra(MainActivity.SELECTED_DATE);
+		Date = intent.getStringExtra(SELECTED_DATE);		//store the date selected in Date string
+		showDate = (EditText) findViewById(R.id.dateEditText);	//point showDate to date EditText
+		showDate.setText(Date);			//put the string in the date editText
 		
-		TextView displayDate = new TextView (this);
-		displayDate.setText(Date);
-		
-		setContentView(displayDate);
-			
+		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) { 
+			// Show the Up button in the action bar.
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+		}	
 	}
-
-	/**
-	 * Set up the {@link android.app.ActionBar}.
-	 */
-	private void setupActionBar() {
-		 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) 
-		 {
-		 getActionBar().setDisplayHomeAsUpEnabled(true);
-		 }
-
-	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

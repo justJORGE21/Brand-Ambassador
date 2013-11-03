@@ -9,6 +9,7 @@
     <string name="reports_button">Reports</string>
     <string name="selectedDate"></string>
     <string name="addEvent">Add Event</string>
+    <string name="date">Date</string>
     <string name="title_activity_add_event">Add Event</string>
     <string name="Addbutton">+</string>
     <string name="title_activity_display_event">Add Event</string>
@@ -22,5 +23,7 @@
     <string name="pay_rate">Pay Rate</string>
     <string name="payrate_message">Tap to enter the pay rate</string>
     <string name="title_activity_display_documents">Documents</string>
+    <string name="files_button">Files</string>
+    <string name="images_button">Images</string>
 
 </resources>

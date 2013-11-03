@@ -1,17 +1,16 @@
 package com.example.brandambassador;
 
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CalendarView;
-import android.widget.TextView;
 import android.widget.CalendarView.OnDateChangeListener;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	public final static String SELECTED_DATE = "com.example.myfirstapp.DATE";
 	
 	TextView selectedDate;
 	@Override
@@ -46,17 +45,13 @@ public class MainActivity extends Activity {
 	
 	public void addEvent (View view)
 	{
-		Intent intent = new Intent (this, AddEventActivity.class);
-		TextView Date = (TextView) findViewById(R.id.selectedDate);
-		String date = Date.getText().toString();
-		intent.putExtra(SELECTED_DATE, date);
-		startActivity (intent);
+		Intent intent = new Intent(this, AddEventActivity.class);			//create intent for AddEventActivity
+		intent.putExtra(AddEventActivity.SELECTED_DATE, selectedDate.getText()); //pass the selected date to AddEventActivity
+		startActivity(intent);  //start AddEventActivity
 	}
 	
 	public void openDocs(View view) {
-		Intent intent = new Intent(this, DisplayDocumentsActivity.class);
-		startActivity(intent);
-		
+		Intent intent = new Intent(this, DisplayDocumentsActivity.class);	//create intent for DisplayDocumentsActivity
+		startActivity(intent);	//start DisplayDocumentsActivity
 	}
-
 }
