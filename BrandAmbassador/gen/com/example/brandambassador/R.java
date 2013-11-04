@@ -93,15 +93,17 @@ public final class R {
         public static final int display_date=0x7f050012;
         public static final int documents_button=0x7f050003;
         public static final int enterProductClient=0x7f050015;
-        public static final int files_button=0x7f050021;
+        public static final int enter_pay_day=0x7f050021;
+        public static final int files_button=0x7f050024;
+        public static final int from=0x7f05001f;
         /**  String for Report Activity 
  String for Document Activity 
          */
-        public static final int hello_world=0x7f05001f;
+        public static final int hello_world=0x7f050022;
         public static final int hint_contacts=0x7f05001d;
         public static final int hint_notes=0x7f05001c;
         public static final int hiring_company=0x7f050016;
-        public static final int images_button=0x7f050022;
+        public static final int images_button=0x7f050025;
         public static final int location_message=0x7f05000d;
         public static final int money_button=0x7f050004;
         public static final int notes=0x7f05001b;
@@ -117,8 +119,9 @@ public final class R {
          */
         public static final int selected_date=0x7f050008;
         public static final int title_activity_add_event=0x7f05000b;
-        public static final int title_activity_display_documents=0x7f050020;
+        public static final int title_activity_display_documents=0x7f050023;
         public static final int title_message=0x7f05000a;
+        public static final int to=0x7f050020;
     }
     public static final class style {
         /** 

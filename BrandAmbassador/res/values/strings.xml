@@ -11,7 +11,7 @@
     <string name="addEvent">Add Event</string>      
     
     <!-- String for AddEvent Activity -->
-    <string name="selected_date">Date:</string>
+    <string name="selected_date">Date:</string>  
     <string name="Title">Title:</string>
     <string name="title_message"></string>
    	<string name="title_activity_add_event">Add Event</string>
@@ -34,6 +34,9 @@
     <string name="hint_notes"></string>
     <string name="hint_contacts"></string>
     <string name="save_event">Save Event</string>
+    <string name="from"></string>
+    <string name="to"></string>
+    <string name="enter_pay_day"></string>
 
 	<!-- String for Report Activity -->
 	

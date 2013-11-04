@@ -13,7 +13,7 @@ public class AddEventActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.add_event);
+		setContentView(R.layout.add_event);  
 		
 		//Get the message from the intent that was in MainActivity
 		Intent intent = getIntent();
