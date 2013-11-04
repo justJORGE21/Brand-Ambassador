@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void doReports(View view){
-		Intent intent = new Intent (this, DoReportActivity.class);
+		Intent intent = new Intent (this, CreateReportActivity.class);
 		startActivity (intent);
 	
 	

@@ -8,14 +8,14 @@
     <string name="money_button">Finances</string>
     <string name="reports_button">Reports</string>
     <string name="selectedDate"></string>
-    <string name="addEvent">Add Event</string>      
-    
+    <string name="addEvent">Add Event</string>
+
     <!-- String for AddEvent Activity -->
-    <string name="selected_date">Date:</string>  
+    <string name="selected_date">Date:</string>
     <string name="Title">Title:</string>
     <string name="title_message"></string>
-   	<string name="title_activity_add_event">Add Event</string>
-  	<string name="Location">Location:</string>
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="Location">Location:</string>
     <string name="location_message"></string>
     <string name="From">From:</string>
     <string name="To">To:</string>
@@ -38,13 +38,19 @@
     <string name="to"></string>
     <string name="enter_pay_day"></string>
 
-	<!-- String for Report Activity -->
-	
-	
-	
-	<!-- String for Document Activity -->
-	<string name="hello_world">This is the page where you add an event!</string>
-	<string name="title_activity_display_documents">Documents</string>
-	<string name="files_button">Files</string>
-	<string name="images_button">Images</string>
+    <!-- String for Report Activity -->
+
+
+    <!-- String for Document Activity -->
+    <string name="hello_world">This is the page where you add an event!</string>
+    <string name="title_activity_display_documents">Documents</string>
+    <string name="files_button">Files</string>
+    <string name="images_button">Images</string>
+    <string name="title_activity_do_report">Report</string>
+    <string name="title_activity_create_report">CreateReportActivity</string>
+    <string name="create_info">This is a placeholder for reports. Hitting create will output an example excel sheet with atributes on the page.\n\nEnter a Title:</string>
+    <string name="create_title">My Spreadsheet</string>
+    <string name="create_rows">10</string>
+    <string name="create_value">10</string>
+
 </resources>

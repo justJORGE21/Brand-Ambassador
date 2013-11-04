@@ -17,7 +17,7 @@
         android:text="Button" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button3"
-        android:layout_alignRight="@+id/button1"
+        android:layout_alignRight="@+id/button_create"
         android:layout_marginBottom="18dp"
         android:text="@string/images_button" />
 
