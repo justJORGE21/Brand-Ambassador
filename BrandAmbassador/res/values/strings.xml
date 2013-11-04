@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- String for Main Activity (Calendar Page) -->
     <string name="app_name">Brand Ambassador</string>
     <string name="action_settings">Settings</string>
     <string name="calendar_button">Calendar</string>
@@ -43,4 +42,6 @@
 	<!-- String for Document Activity -->
 	<string name="hello_world">This is the page where you add an event!</string>
 	<string name="title_activity_display_documents">Documents</string>
+	<string name="files_button">Files</string>
+	<string name="images_button">Images</string>
 </resources>

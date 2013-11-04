@@ -50,8 +50,14 @@ public class MainActivity extends Activity {
 	}
 	
 	public void openDocs(View view) {
-		Intent intent = new Intent(this, DisplayDocumentsActivity.class);
-		startActivity(intent);
+		Intent intent = new Intent(this, DisplayDocumentsActivity.class);	//create intent for DisplayDocumentsActivity
+		startActivity(intent);	//start DisplayDocumentsActivity
 	}
-
+	
+	public void doReports(View view){
+		Intent intent = new Intent (this, DoReportActivity.class);
+		startActivity (intent);
+	
+	
+	}
 }
