@@ -16,7 +16,7 @@
     <EditText
         android:id="@+id/enterLocation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
+        android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/location"
         android:layout_alignBottom="@+id/location"
         android:layout_toRightOf="@+id/location"
@@ -50,7 +50,6 @@
         android:layout_alignBaseline="@+id/payDay"
         android:layout_below="@+id/enterPayRate"
         android:layout_toRightOf="@+id/payRate"
-        android:hint="@string/enter_pay_day"
         android:ems="10"/>
 
     <EditText
@@ -82,7 +81,6 @@
         android:layout_alignBottom="@+id/from"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@id/from"
-        android:hint="@string/from"
         android:ems="10">
     </EditText>
 
@@ -94,7 +92,6 @@
         android:layout_alignBottom="@+id/to"
         android:layout_alignLeft="@id/time_from"
         android:layout_toRightOf="@+id/to"
-        android:hint="@string/to"
         android:ems="10"/>
 
     <EditText
@@ -180,7 +177,11 @@
     <TextView
         android:id="@+id/hiringCompany"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"  />
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/role"
+        android:layout_below="@+id/productClient"
+        android:layout_marginTop="15dp"
+        android:text="@string/hiring_company" />
 
     <TextView
         android:id="@+id/ProductandClient"
@@ -282,4 +283,5 @@
         android:text="@string/save_event" />
 
 </RelativeLayout>
+
 </ScrollView>
