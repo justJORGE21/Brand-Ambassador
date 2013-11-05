@@ -3,12 +3,18 @@ package com.example.brandambassador;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.brandambassador.sqlite.helper.EventHelper;
+import com.example.brandambassador.sqlite.model.Events;
+
 public class AddEventActivity extends Activity {
 	EditText Title, Location, eventDate, Time_from, Time_to, PayRate, PayDay, Prod_Client, HiringComp, Role, Contacts, Notes;
+	TextView Date;
+	public final static String EXTRAS = "com.example.myfirstapp.EXTRAS";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +28,6 @@ public class AddEventActivity extends Activity {
 		TextView displayDate = (TextView) findViewById(R.id.displayDate);
 		displayDate.setText(Date);
 	}
-	
 	
 	//start ReportActivity to save the event
 	public void saveEvent(View view)
@@ -61,5 +66,31 @@ public class AddEventActivity extends Activity {
 		Contacts = (EditText) findViewById (R.id.enterContacts);
 		Notes = (EditText) findViewById (R.id.enterNotes);		
 	}
-
+	
+	public void createEvent(View view)  {
+		Title = (EditText) findViewById (R.id.enterTitle);
+		Prod_Client = (EditText) findViewById (R.id.productClient);
+		HiringComp = (EditText) findViewById (R.id.enterHiringCompany);
+		Date = (TextView) findViewById(R.id.displayDate);
+		
+		Intent intent = new Intent();//(this, EventDetailsActivity.class);
+		
+		Editable editable = Title.getText();				//used to get text from Title
+		
+		Events event = new Events(editable.toString());
+	
+		editable = Prod_Client.getText();
+		event.setClient(editable.toString());
+		
+		editable = HiringComp.getText();
+		event.setEmployer(editable.toString());
+		
+		event.setDate((String) Date.getText());
+		
+		EventHelper db = new EventHelper(this);
+		db.createEvent(event);		//use value entered in Title as the name for the new event
+		
+		startActivity(intent);
+		
+	}
 }

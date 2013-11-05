@@ -47,6 +47,14 @@
             android:name="com.example.brandambassador.CreateReportActivity"
             android:label="@string/title_activity_create_report" >
         </activity>
+        <activity
+            android:name="com.example.brandambassador.EventDetailsActivity"
+            android:label="@string/title_activity_event_details"
+            android:parentActivityName="com.example.brandambassador.AddEventActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.brandambassador.AddEventActivity" />
+        </activity>
     </application>
 
 </manifest>
