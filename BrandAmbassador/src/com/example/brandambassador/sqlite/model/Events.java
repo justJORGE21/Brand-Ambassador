@@ -1,8 +1,8 @@
 package com.example.brandambassador.sqlite.model;
 
 public class Events {
-	    int id = 0;
-	    String eventTitle, client, employer;
+	    int id;
+	    String eventTitle, client, employer, date;
 	    boolean payType;
 	    double latitude, longitude;
 	    int startTime, endTime;
@@ -17,9 +17,14 @@ public class Events {
 	    	this.eventTitle = eventTitle;
 	    }
 	 
+	    public Events(Events event) {
+	    	this.client = event.client;
+	    	this.employer = event.employer;
+	    }
+	    
 	    @Override
 	    public String toString() {
-	    	return "Event [id= " + id + " "+ eventTitle;
+	    	return "Event[id= " + id + "] " + date + " Title: "+ eventTitle + " Hiring Company: " + employer + " Client: " + client;
 	    }
 	    
 	    // setters
@@ -27,6 +32,10 @@ public class Events {
 	        this.id = id;
 	    }
 	 
+	    public void setDate(String date) {
+	    	this.date = date;
+	    }
+	    
 	    public void setEventTitle(String eventTitle) {
 	        this.eventTitle = eventTitle;
 	    }
@@ -94,5 +103,9 @@ public class Events {
 	    
 	    public boolean getPayType() {
 	    	return this.payType;
+	    }
+	    
+	    public String getDate() {
+	    	return date;
 	    }
 }

@@ -17,7 +17,7 @@ import com.example.brandambassador.sqlite.model.Events;
 public class EventHelper extends SQLiteOpenHelper {
 	 
     // Database Version
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     // Database Name
     private static final String DATABASE_NAME = "event_info";
     private static final String KEY_ID = "id";
@@ -43,9 +43,11 @@ public class EventHelper extends SQLiteOpenHelper {
         String CREATE_EVENT_TABLE = "CREATE TABLE events ( " +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " + 
                 "title TEXT, "+
-                "date TEXT )";
+                "date TEXT, " +
+                "client TEXT, " +
+                "employer TEXT )";
  
-        // create books table
+        // create event table
         db.execSQL(CREATE_EVENT_TABLE);
     }
  
@@ -62,7 +64,11 @@ public class EventHelper extends SQLiteOpenHelper {
        	SQLiteDatabase db = this.getWritableDatabase();
        	
        	ContentValues values = new ContentValues();
-       	values.put("title", event.getEventTitle());
+      	values.put("title", event.getEventTitle());
+       	values.put("date", event.getDate());
+       	values.put("client", event.getClient());
+      	values.put("employer", event.getEmployer());
+       	
     	/*values.put("25", event.getLatitude());
     	values.put("5", event.getLongitude());
     	values.put("0800", event.getStartTime());
@@ -71,16 +77,16 @@ public class EventHelper extends SQLiteOpenHelper {
     	values.put("hourly", event.getPayType());*/
        	
        	
-       	long id = db.insert("events", null, values);
+        long id = db.insert("events", null, values);
+       
+        event.setId((int)id);	
        	
-       	event.setId((int)id);
-       	
-       	Log.d("addEvent", event.toString());
+        Log.d("addEvent", event.toString());
        	
        	db.close();
     }
     
-    public Events getEvent(int eventId) {
+/*    public Events getEvent(int eventId) {
     	SQLiteDatabase db = this.getReadableDatabase();
     	
     	Cursor cursor = 
@@ -104,7 +110,7 @@ public class EventHelper extends SQLiteOpenHelper {
     	
     	return event;
 
-    }
+    }*/
      /*   String selectQuery = "SELECT  * FROM " + TABLE_EVENTINFO + " WHERE "
                 + KEY_ID + " = " + eventId;
      

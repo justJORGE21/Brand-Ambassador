@@ -20,10 +20,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		EventHelper db = new EventHelper(this);
-		db.createEvent(new Events("Test"));
-		
+	
 		CalendarView calendar = (CalendarView) findViewById(R.id.myCalendar);
 				
 		calendar.setOnDateChangeListener(new OnDateChangeListener()
