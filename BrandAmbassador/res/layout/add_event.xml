@@ -67,7 +67,13 @@
         android:inputType="date" 
         android:hint="@string/date" />
     
-	</LinearLayout>	
-    
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/submit_event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_event_button"
+        android:onClick="createEvent" />
 
 </TableLayout>

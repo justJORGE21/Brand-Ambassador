@@ -25,5 +25,7 @@
     <string name="title_activity_display_documents">Documents</string>
     <string name="files_button">Files</string>
     <string name="images_button">Images</string>
+   	<string name="submit_event_button">Submit</string>
+    
 
 </resources>

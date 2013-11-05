@@ -24,7 +24,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
+        public static final int action_settings=0x7f080010;
         public static final int addEventButton=0x7f080005;
         public static final int button1=0x7f080002;
         public static final int button2=0x7f080001;
@@ -39,6 +39,7 @@ public final class R {
         public static final int payrate_message=0x7f08000c;
         public static final int reportButton=0x7f080008;
         public static final int selectedDate=0x7f080006;
+        public static final int submit_event_button=0x7f08000f;
         public static final int textView1=0x7f08000d;
     }
     public static final class layout {
@@ -72,6 +73,7 @@ public final class R {
         public static final int payrate_message=0x7f050014;
         public static final int reports_button=0x7f050005;
         public static final int selectedDate=0x7f050006;
+        public static final int submit_event_button=0x7f050018;
         public static final int title_activity_add_event=0x7f050009;
         public static final int title_activity_display_documents=0x7f050015;
         public static final int title_activity_display_event=0x7f05000b;

@@ -8,7 +8,11 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+
+import com.example.brandambassador.sqlite.helper.EventHelper;
+import com.example.brandambassador.sqlite.model.Events;
 
 public class AddEventActivity extends Activity {
 	public final static String SELECTED_DATE = "com.example.brandambassador.DATE";		//Extra for passing date from MainActivity to AddEventActivity
@@ -56,5 +60,10 @@ public class AddEventActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	
+	public void createEvent(View view)  {
+		EventHelper db = new EventHelper(this);
+		db.createEvent(new Events("Test 2"));
+		
+	}
 }

@@ -10,6 +10,9 @@ import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
 import android.widget.TextView;
 
+import com.example.brandambassador.sqlite.helper.EventHelper;
+import com.example.brandambassador.sqlite.model.Events;
+
 public class MainActivity extends Activity {
 	
 	TextView selectedDate;
@@ -17,6 +20,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		EventHelper db = new EventHelper(this);
+		db.createEvent(new Events("Test"));
+		db.createEvent(new Events("Huh"));
 		
 		CalendarView calendar = (CalendarView) findViewById(R.id.myCalendar);
 		selectedDate = (TextView) findViewById (R.id.selectedDate);
