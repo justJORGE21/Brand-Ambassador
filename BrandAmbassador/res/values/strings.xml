@@ -48,9 +48,11 @@
     <string name="images_button">Images</string>
     <string name="title_activity_do_report">Report</string>
     <string name="title_activity_create_report">CreateReportActivity</string>
-    <string name="create_info">This is a placeholder for reports. Hitting create will output an example excel sheet with atributes on the page.\n\nEnter a Title:</string>
-    <string name="create_title">My Spreadsheet</string>
+    <string name="create_info">This is a placeholder for reports. Hitting create will output an example excel sheet with attributes on the page.\n\nEnter a Title:</string>
+    <string name="create_title">My Spreadsheet Title</string>
     <string name="create_rows">10</string>
     <string name="create_value">10</string>
+    <string name="create_button_make">Create</string>
+    <string name="create_button_view">View Most Recent Report</string>
 
 </resources>
