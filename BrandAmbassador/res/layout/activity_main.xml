@@ -16,14 +16,6 @@
         android:layout_below="@+id/addEventButton"
         android:showWeekNumber="false" />
 
-    <TextView
-        android:id="@+id/selectedDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/myCalendar"
-        android:layout_alignLeft="@+id/myCalendar"
-        android:text="@string/selectedDate" />
-
     <Button
         android:id="@+id/financeButton"
         style="?android:attr/buttonStyleSmall"
@@ -33,13 +25,13 @@
         android:layout_alignBottom="@+id/reportButton"
         android:layout_toRightOf="@+id/reportButton"
         android:text="@string/money_button" />
-
+ 
     <Button
         android:id="@+id/calendarButton"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/selectedDate"
+        android:layout_alignLeft="@+id/myCalendar"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:text="@string/calendar_button" />
@@ -52,7 +44,8 @@
         android:layout_alignBaseline="@+id/calendarButton"
         android:layout_alignBottom="@+id/calendarButton"
         android:layout_toRightOf="@+id/calendarButton"
-        android:text="@string/reports_button" />
+        android:text="@string/reports_button"
+        android:onClick="doReports" />
 
     <Button
         android:id="@+id/addEventButton"

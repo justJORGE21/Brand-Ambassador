@@ -9,23 +9,48 @@
     <string name="reports_button">Reports</string>
     <string name="selectedDate"></string>
     <string name="addEvent">Add Event</string>
-    <string name="date">Date</string>
+
+    <!-- String for AddEvent Activity -->
+    <string name="selected_date">Date:</string>
+    <string name="Title">Title:</string>
+    <string name="title_message"></string>
     <string name="title_activity_add_event">Add Event</string>
-    <string name="Addbutton">+</string>
-    <string name="title_activity_display_event">Add Event</string>
+    <string name="Location">Location:</string>
+    <string name="location_message"></string>
+    <string name="From">From:</string>
+    <string name="To">To:</string>
+    <string name="pay_rate">Pay Rate:</string>
+    <string name="payrate_message"></string>
+    <string name="display_date"></string>
+    <string name="pay_day">Pay Day:</string>
+    <string name="product_client">Product/Client:</string>
+    <string name="enterProductClient"></string>
+    <string name="hiring_company">Hiring Company:</string>
+    <string name="HiringCompany"></string>
+    <string name="role">Role:</string>
+    <string name="EnterRole"></string>
+    <string name="contacts">Contacts</string>
+    <string name="notes">Notes:</string>
+    <string name="hint_notes"></string>
+    <string name="hint_contacts"></string>
+    <string name="save_event">Save Event</string>
+    <string name="from"></string>
+    <string name="to"></string>
+    <string name="enter_pay_day"></string>
+
+    <!-- String for Report Activity -->
+
+
+    <!-- String for Document Activity -->
     <string name="hello_world">This is the page where you add an event!</string>
-    <string name="Title">Title</string>
-    <string name="title_message">Tap to enter title</string>
-    <string name="Location">Location</string>
-    <string name="location_message">Tap to enter the location</string>
-    <string name="From">From</string>
-    <string name="To">To</string>
-    <string name="pay_rate">Pay Rate</string>
-    <string name="payrate_message">Tap to enter the pay rate</string>
     <string name="title_activity_display_documents">Documents</string>
     <string name="files_button">Files</string>
     <string name="images_button">Images</string>
-   	<string name="submit_event_button">Submit</string>
-    
+    <string name="title_activity_do_report">Report</string>
+    <string name="title_activity_create_report">CreateReportActivity</string>
+    <string name="create_info">This is a placeholder for reports. Hitting create will output an example excel sheet with atributes on the page.\n\nEnter a Title:</string>
+    <string name="create_title">My Spreadsheet</string>
+    <string name="create_rows">10</string>
+    <string name="create_value">10</string>
 
 </resources>

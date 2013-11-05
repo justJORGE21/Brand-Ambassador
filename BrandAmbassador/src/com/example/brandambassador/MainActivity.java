@@ -8,26 +8,24 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
-import android.widget.TextView;
 
 import com.example.brandambassador.sqlite.helper.EventHelper;
 import com.example.brandambassador.sqlite.model.Events;
 
 public class MainActivity extends Activity {
+	//Initialize Variable
+	String selectedDate;
 	
-	TextView selectedDate;
-	@Override
+	@Override  
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		EventHelper db = new EventHelper(this);
 		db.createEvent(new Events("Test"));
-		db.createEvent(new Events("Huh"));
 		
 		CalendarView calendar = (CalendarView) findViewById(R.id.myCalendar);
-		selectedDate = (TextView) findViewById (R.id.selectedDate);
-		
+				
 		calendar.setOnDateChangeListener(new OnDateChangeListener()
 			{
 			@Override
@@ -36,8 +34,7 @@ public class MainActivity extends Activity {
 				int Day = day;
 				int Month = month + 1; //Month starts with 0
 				int Year = year;
-				
-				selectedDate.setText(Month + "/" + Day + "/" + Year);
+				selectedDate = Month + "/" + Day + "/" + Year;
 			}
 		});
 		
@@ -50,15 +47,23 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	//Start addEvent Activity when Add Event Button is clicked
 	public void addEvent (View view)
 	{
-		Intent intent = new Intent(this, AddEventActivity.class);			//create intent for AddEventActivity
-		intent.putExtra(AddEventActivity.SELECTED_DATE, selectedDate.getText()); //pass the selected date to AddEventActivity
-		startActivity(intent);  //start AddEventActivity
+		Intent intent = new Intent (this, AddEventActivity.class);
+		intent.putExtra("SELECTED_DATE", selectedDate);
+		startActivity (intent);
 	}
 	
 	public void openDocs(View view) {
 		Intent intent = new Intent(this, DisplayDocumentsActivity.class);	//create intent for DisplayDocumentsActivity
 		startActivity(intent);	//start DisplayDocumentsActivity
+	}
+	
+	public void doReports(View view){
+	//	Intent intent = new Intent (this, CreateReportActivity.class);
+		//startActivity (intent);
+	
+	
 	}
 }
