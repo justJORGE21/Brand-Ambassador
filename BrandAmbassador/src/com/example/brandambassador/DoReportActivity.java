@@ -9,7 +9,7 @@ public class DoReportActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		setContentView(R.layout.do_report);
+		//setContentView(R.layout.do_report);
 	}
 
 	@Override

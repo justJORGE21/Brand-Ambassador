@@ -279,7 +279,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/enterTitle"
-        android:onClick="saveEvent"
+        android:onClick="createEvent"
         android:text="@string/save_event" />
 
 </RelativeLayout>

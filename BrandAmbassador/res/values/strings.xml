@@ -52,5 +52,6 @@
     <string name="create_title">My Spreadsheet</string>
     <string name="create_rows">10</string>
     <string name="create_value">10</string>
+    <string name="title_activity_event_details">Event Details</string>
 
 </resources>

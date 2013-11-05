@@ -59,8 +59,6 @@ public class EventHelper extends SQLiteOpenHelper {
     }
     
     public void createEvent(Events event) {
-       	Log.d("addEvent", event.toString());
-       	
        	SQLiteDatabase db = this.getWritableDatabase();
        	
        	ContentValues values = new ContentValues();
@@ -73,7 +71,12 @@ public class EventHelper extends SQLiteOpenHelper {
     	values.put("hourly", event.getPayType());*/
        	
        	
-       	db.insert("events", null, values);
+       	long id = db.insert("events", null, values);
+       	
+       	event.setId((int)id);
+       	
+       	Log.d("addEvent", event.toString());
+       	
        	db.close();
     }
     

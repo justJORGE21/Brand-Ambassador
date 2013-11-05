@@ -66,14 +66,16 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_display_documents=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int add_event=0x7f030002;
+        public static final int activity_event_details=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int add_event=0x7f030003;
     }
     public static final class menu {
         public static final int add_event=0x7f070000;
         public static final int display_documents=0x7f070001;
         public static final int do_report=0x7f070002;
-        public static final int main=0x7f070003;
+        public static final int event_details=0x7f070003;
+        public static final int main=0x7f070004;
     }
     public static final class string {
         public static final int EnterRole=0x7f050019;
@@ -123,6 +125,7 @@ public final class R {
         public static final int title_activity_create_report=0x7f050027;
         public static final int title_activity_display_documents=0x7f050023;
         public static final int title_activity_do_report=0x7f050026;
+        public static final int title_activity_event_details=0x7f05002c;
         public static final int title_message=0x7f05000a;
         public static final int to=0x7f050020;
     }
